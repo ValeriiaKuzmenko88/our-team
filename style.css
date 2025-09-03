@@ -1,0 +1,71 @@
+body{
+  text-align: center;
+  color: #898F8F;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+header{
+  position: relative;
+  padding-bottom: 4px;
+  max-width: 450px;
+  margin: auto;
+}
+
+header::after{
+  content: url(img/bonfire-sharp.svg);
+  display: block;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  translate: -50%;
+  width: 30px;
+}
+
+hr{
+  border: none;
+  background-color: gold;
+  min-height: 1px;
+}
+
+figure{
+  padding: 15px;
+  border: 1px solid gold;
+  margin: 0;
+  display: inline-flex;
+  position: relative;
+}
+
+figure::before, figure::after{
+  content: "";
+  position: absolute;
+  inset: 100px -2px;
+  background: #fff;
+}
+
+figure::after{
+  rotate: 90deg;
+}
+
+img{
+  z-index: 1;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+h1{
+  color: gold;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+span{
+text-transform: uppercase;
+}
