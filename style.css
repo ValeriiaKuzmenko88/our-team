@@ -3,13 +3,14 @@ body{
   color: #898F8F;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
+  margin-bottom: 120px;
 }
 
 header{
   position: relative;
   padding-bottom: 4px;
   max-width: 450px;
-  margin: auto;
+  margin: 120px auto 40px;
 }
 
 header::after{
@@ -23,10 +24,22 @@ header::after{
   width: 30px;
 }
 
+h1{
+  color: gold;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  margin-block: 15px 45px;
+  line-height: 66px;
+  font-size: 60px;
+}
+
 hr{
   border: none;
   background-color: gold;
   min-height: 1px;
+  min-width: 1px;
+  align-self: stretch;
 }
 
 figure{
@@ -35,12 +48,13 @@ figure{
   margin: 0;
   display: inline-flex;
   position: relative;
+  margin-bottom: 40px;
 }
 
 figure::before, figure::after{
   content: "";
   position: absolute;
-  inset: 100px -2px;
+  inset: 23.3% -2px;
   background: #fff;
 }
 
@@ -48,8 +62,29 @@ figure::after{
   rotate: 90deg;
 }
 
-img{
+figure>img{
   z-index: 1;
+  max-width: 70vw;
+}
+
+h2{
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: #666;
+}
+
+h2+hr{
+  height: 2px;
+  max-width: 100px;
+  margin-block: 30px;
+}
+
+h3{
+  color: #666;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
 }
 
 ul{
@@ -57,15 +92,56 @@ ul{
   margin: 0;
   padding: 0;
   display: inline-flex;
+  margin-block: 30px 50px;
+  gap: 5px;
 }
 
-h1{
-  color: gold;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+li{
+  transition: 500ms;
+}
+
+li:hover{
+  filter: brightness(0.5);
+}
+
+p{
+  color: #333;
+  max-width: 430px;
+  font-size: 14px;
+  line-height: 24px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 span{
-text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+button{
+  width: 118px;
+  height: 24px;
+  font-family: "Open Sans" , sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid gold;
+  background: none;
+  display: block;
+  margin: 25px auto;
+}
+
+@media (min-width: 1170px ){
+  main{
+    display: flex;
+    max-width: 1170px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  main>hr{
+    margin: 0; 
+
+  }
 }
